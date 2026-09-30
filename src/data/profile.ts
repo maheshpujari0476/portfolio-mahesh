@@ -1,7 +1,7 @@
 export const profile = {
   name: "Mahesh Pujari",
   role: "Associate Software Engineer",
-  headline: "Java Backend & Full Stack Developer",
+  headline: "Associate Software Engineer",
   description: "Building secure, scalable and production-ready applications with Java, Spring Boot, React.js, Next.js and Node.js.",
   about: `I’m an Associate Software Engineer with hands-on experience building and maintaining production ERP and full-stack applications. I work primarily with Java, Spring Boot, React.js, Next.js, Node.js, PostgreSQL, MySQL, MongoDB, and Redis.
 

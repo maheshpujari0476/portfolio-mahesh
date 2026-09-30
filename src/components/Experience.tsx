@@ -96,37 +96,6 @@ function ExperienceCard({ exp, index }: { exp: (typeof experiences)[0]; index: n
             </>
           )}
         </div>
-
-        {/* Project Highlight Box (BAMS ERP) */}
-        {exp.projectHighlight && (
-          <div className="mt-10 bg-[#000000] border border-[#262626] rounded-lg p-6 relative overflow-hidden">
-            <div className="absolute top-0 left-0 w-1 h-full bg-[#E3B140]"></div>
-            
-            <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
-              <div>
-                <h4 className="text-[#FFFFFF] font-bold text-xl">{exp.projectHighlight.title}</h4>
-                <p className="text-[#A1A1AA] text-sm font-mono mt-1">{exp.projectHighlight.subtitle}</p>
-              </div>
-            </div>
-
-            <p className="text-[#D1D5DB] mb-4">{exp.projectHighlight.description}</p>
-            
-            <div className="mb-6 grid grid-cols-1 sm:grid-cols-2 gap-2">
-              {exp.projectHighlight.features.map((feature: string, i: number) => (
-                <div key={i} className="flex items-center text-sm text-[#D1D5DB]">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#E3B140] mr-2"></span>
-                  {feature}
-                </div>
-              ))}
-            </div>
-
-            <div className="flex flex-wrap gap-2">
-              {exp.projectHighlight.technologies.map((tech: string, i: number) => (
-                <Badge key={i} variant="secondary">{tech}</Badge>
-              ))}
-            </div>
-          </div>
-        )}
       </div>
     </motion.div>
   );

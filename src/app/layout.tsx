@@ -15,8 +15,8 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Mahesh Pujari | Associate Software Engineer | Java & Full Stack Developer",
-  description: "Portfolio of Mahesh Pujari, Associate Software Engineer specializing in Java, Spring Boot, React.js, Next.js, Node.js, REST APIs, microservices and production ERP applications.",
+  title: "Mahesh Pujari | Associate Software Engineer",
+  description: "Portfolio of Mahesh Pujari, Associate Software Engineer specializing in Java, Spring Boot, React.js, Next.js, Node.js, REST APIs, microservices and production applications.",
 };
 
 export default function RootLayout({
@@ -25,9 +25,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className={`scroll-smooth ${inter.variable} ${jetbrainsMono.variable}`}>
       <body
-        className={`${inter.variable} ${jetbrainsMono.variable} antialiased bg-[var(--background)] text-[var(--foreground)] min-h-screen flex flex-col`}
+        className={`${inter.className} antialiased bg-[var(--background)] text-[var(--foreground)] min-h-screen flex flex-col`}
       >
         <Navbar />
         <main className="flex-grow">

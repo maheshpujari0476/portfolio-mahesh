@@ -1,4 +1,12 @@
-export const Badge = ({ children, variant = "default" }: { children: React.ReactNode; variant?: "default" | "primary" | "secondary" | "outline" }) => {
+export const Badge = ({ 
+  children, 
+  variant = "default",
+  className = ""
+}: { 
+  children: React.ReactNode; 
+  variant?: "default" | "primary" | "secondary" | "outline";
+  className?: string;
+}) => {
   const baseStyles = "px-2.5 py-0.5 rounded-full text-xs font-medium font-mono inline-flex items-center justify-center transition-colors";
   
   const variants = {
@@ -9,7 +17,7 @@ export const Badge = ({ children, variant = "default" }: { children: React.React
   };
   
   return (
-    <span className={`${baseStyles} ${variants[variant]}`}>
+    <span className={`${baseStyles} ${variants[variant]} ${className}`}>
       {children}
     </span>
   );

@@ -40,7 +40,7 @@ export default function Navbar() {
           {/* Logo / Name */}
           <div className="flex-shrink-0 flex items-center">
             <Link href="/" className="text-xl font-bold tracking-tight text-[#E3B140] transition-colors">
-              Pujari<span className="text-[#E3B140]">.</span>
+              SDE<span className="text-[#E3B140]"></span>
             </Link>
           </div>
 

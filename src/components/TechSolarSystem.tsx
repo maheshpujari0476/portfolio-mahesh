@@ -34,10 +34,12 @@ function PlanetCard({ icon, label }: PlanetProps) {
 
 export default function TechSolarSystem() {
   return (
-    <div className="relative w-full max-w-[540px] aspect-square mx-auto flex items-center justify-center select-none pause-orbit overflow-visible">
-      {/* Background Ambient Violet Glow for the Galaxy */}
-      <div className="absolute w-[320px] h-[320px] rounded-full bg-violet-600/10 blur-[90px] pointer-events-none" />
-      <div className="absolute w-[180px] h-[180px] rounded-full bg-[#E3B140]/5 blur-[60px] pointer-events-none" />
+    <div className="relative w-full max-w-[340px] min-[420px]:max-w-[400px] sm:max-w-[480px] lg:max-w-[540px] aspect-square mx-auto flex items-center justify-center select-none pause-orbit">
+      {/* Responsive scaling wrapper to guarantee flawless mobile fit */}
+      <div className="relative w-[540px] h-[540px] shrink-0 scale-[0.6] min-[420px]:scale-[0.7] sm:scale-[0.84] lg:scale-100 origin-center flex items-center justify-center transition-transform duration-300">
+        {/* Background Ambient Violet Glow for the Galaxy */}
+        <div className="absolute w-[320px] h-[320px] rounded-full bg-violet-600/10 blur-[90px] pointer-events-none" />
+        <div className="absolute w-[180px] h-[180px] rounded-full bg-[#E3B140]/5 blur-[60px] pointer-events-none" />
 
       {/* ============================================================ */}
       {/* CENTER SUN CORE (< / > DEV) */}
@@ -139,5 +141,6 @@ export default function TechSolarSystem() {
         </div>
       </div>
     </div>
-  );
+  </div>
+);
 }
