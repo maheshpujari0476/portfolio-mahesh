@@ -1,26 +1,126 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #000000;
+  --background-secondary: #0A0A0A;
+  --surface: #121212;
+  --foreground: #FFFFFF;
+  --foreground-secondary: #A1A1AA;
+  --accent-primary: #E3B140;
+  --accent-secondary: #E3B140;
+  --border-color: #222222;
 }
 
 @theme inline {
   --color-background: var(--background);
+  --color-background-secondary: var(--background-secondary);
+  --color-surface: var(--surface);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-foreground-secondary: var(--foreground-secondary);
+  --color-accent-primary: var(--accent-primary);
+  --color-accent-secondary: var(--accent-secondary);
+  --color-border-color: var(--border-color);
+  
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-jetbrains-mono);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
+/* Base custom utility classes */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .ambient-grid {
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+    background-size: 48px 48px;
+    mask-image: linear-gradient(to bottom, black 25%, transparent 85%);
+  }
+}
+
+/* Solar System Orbit Animations */
+@keyframes orbitSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes orbitSpinReverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes counterSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes counterSpinReverse {
+  from {
+    transform: rotate(-360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.animate-orbit-1 {
+  animation: orbitSpin 30s linear infinite;
+}
+.animate-counter-1 {
+  animation: counterSpin 30s linear infinite;
+}
+
+.animate-orbit-2 {
+  animation: orbitSpinReverse 44s linear infinite;
+}
+.animate-counter-2 {
+  animation: counterSpinReverse 44s linear infinite;
+}
+
+.animate-orbit-3 {
+  animation: orbitSpin 58s linear infinite;
+}
+.animate-counter-3 {
+  animation: counterSpin 58s linear infinite;
+}
+
+.animate-orbit-4 {
+  animation: orbitSpinReverse 74s linear infinite;
+}
+.animate-counter-4 {
+  animation: counterSpinReverse 74s linear infinite;
+}
+
+.pause-orbit:hover .animate-orbit-1,
+.pause-orbit:hover .animate-orbit-2,
+.pause-orbit:hover .animate-orbit-3,
+.pause-orbit:hover .animate-orbit-4,
+.pause-orbit:hover .animate-counter-1,
+.pause-orbit:hover .animate-counter-2,
+.pause-orbit:hover .animate-counter-3,
+.pause-orbit:hover .animate-counter-4 {
+  animation-play-state: paused;
+}
+

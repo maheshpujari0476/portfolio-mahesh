@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mahesh Pujari - Professional Portfolio
 
-## Getting Started
+This is the source code for my professional engineering portfolio, designed to highlight my experience in Java, Spring Boot, Full Stack Development, and production ERP systems.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Modern Architecture**: Built with Next.js (App Router), TypeScript, and Tailwind CSS.
+- **Data-Driven**: All content (experience, projects, skills) is decoupled from UI components into the `src/data/` directory for easy maintainability.
+- **Subtle Animations**: Uses Framer Motion for scroll reveals, hover effects, and a responsive experience timeline.
+- **Fully Responsive**: Optimized for Mobile, Tablet, and Desktop displays.
+- **Premium Design**: Dark engineering aesthetic avoiding generic templates.
+
+## Tech Stack
+
+- **Framework**: Next.js 15
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS v4
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+
+## Project Structure
+
+```text
+├── src/
+│   ├── app/            # Next.js App Router (layout, page, globals.css)
+│   ├── components/     # Reusable UI components and page sections
+│   └── data/           # Typed data files (profile, experience, skills, etc.)
+├── public/             # Static assets (including resume.pdf)
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Running Locally
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-## Learn More
+3. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-To learn more about Next.js, take a look at the following resources:
+## Managing Content
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To update the portfolio content, you do **not** need to edit the React components. Simply update the files in `src/data/`:
+- `profile.ts`: Contact info and about me summary.
+- `experience.ts`: Job roles and bullet points.
+- `highlights.ts`: Engineering highlights grid.
+- `skills.ts`: Technologies used.
+- `projects.ts`: Independent projects.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Updating Your Resume
 
-## Deploy on Vercel
+1. Place your latest resume inside the `public/` folder.
+2. Ensure the file is exactly named `resume.pdf`.
+3. The "Download Resume" buttons will automatically link to it.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Deployment (Vercel)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is configured to be deployed directly to Vercel with zero configuration.
+
+1. Push this repository to your GitHub account.
+2. Log in to [Vercel](https://vercel.com/).
+3. Click **Add New Project** and select your GitHub repository.
+4. Leave all build settings as default (`npm run build`).
+5. Click **Deploy**.
+
+## Author
+
+**Mahesh Pujari**
+- [GitHub](https://github.com/maheshpujari0476)
+- [LinkedIn](https://www.linkedin.com/in/maheshpujari04/)
