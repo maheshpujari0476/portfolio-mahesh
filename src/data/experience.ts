@@ -1,21 +1,16 @@
 export const experiences = [
   {
     id: "skyllx",
-    role: "Associate Software Engineer",
+    role: "Full-Stack Developer",
     company: "SkyllX Technologies Pvt. Ltd.",
     period: "Jun 2026 – Present",
-    description: "Develop and maintain production ERP applications using Java, Spring Boot, Next.js, React.js, PostgreSQL, MySQL, and microservices architecture.",
+    description: "Building secure, scalable, and event-driven microservices, multi-channel notification systems, and full-stack solutions with Java, Spring Boot, React.js, and Next.js.",
     isPrimary: true,
     highlights: [
-      "Develop and maintain production ERP applications using Java, Spring Boot, Next.js, React.js, PostgreSQL, MySQL, and microservices architecture.",
-      "Design and develop secure REST APIs using Spring Boot and Spring Data JPA for core ERP modules and business workflows.",
-      "Implement authentication, authorization, and Role-Based Access Control (RBAC) across student, staff, administrator, and organizational roles.",
-      "Design notification workflows supporting Email, WhatsApp, and SMS, including MSG91 integration, template management, DLT template mapping, balance tracking, and delivery workflows.",
-      "Develop bulk data migration services for Excel-based student and staff data with validation, structured processing, and error handling.",
-      "Implement student and staff transfer workflows between institutes within the same organization while preserving required records and admission mappings.",
-      "Implement biometric attendance integration including device enrollment, queued synchronization, device communication, and automatic attendance processing.",
-      "Integrate Traccar-based GPS vehicle tracking using vehicle IMEI registration and real-time location data to display bus location, speed, and movement status through map-based interfaces.",
-      "Work with PostgreSQL and MySQL databases for application data, production workflows, migrations, and database operations."
+      "Designed and built a multi-channel notification system from scratch for Email, SMS, and WhatsApp using MSG91 APIs, then optimized throughput and reliability with Apache Kafka for asynchronous, event-driven processing.",
+      "Developed scalable microservices and REST APIs using Java, Spring Boot, and Spring Data JPA with pagination, filtering, and transactional workflows on MySQL and PostgreSQL.",
+      "Implemented secure backend services with Spring Security, JWT authentication, RBAC, and Redis-based rate limiting, and integrated Traccar for real-time GPS tracking.",
+      "Solved real-world business problems by shipping new backend features, resolving production bugs, and optimizing SQL queries to improve API reliability; deployed with Docker and Kubernetes and managed code with Git and GitHub."
     ]
   }
 ];

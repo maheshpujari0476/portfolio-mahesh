@@ -1,27 +1,13 @@
 export const projects = [
   {
-    id: "hr-portal",
-    title: "HR Portal",
-    description: "Built a full-stack platform for managing placement drives, student applications, recruiter workflows, and candidate tracking.",
-    technologies: ["Spring Boot", "Next.js", "PostgreSQL", "Redis"],
-    features: [
-      "Placement drive & student application workflows",
-      "Recruiter management and real-time candidate tracking",
-      "JWT authentication & Role-Based Access Control (RBAC)",
-      "Redis caching and session management"
-    ],
-    githubUrl: "https://github.com/maheshpujari0476"
-  },
-  {
     id: "online-voting",
-    title: "Online Voting Application",
-    description: "Built a secure online voting platform using the PERN stack with RESTful APIs for election workflows.",
-    technologies: ["PostgreSQL", "Express.js", "React.js", "Node.js"],
+    title: "Online Voting Platform",
+    description: "Engineered a secure, full-stack voting platform with role-based access control and REST APIs for voter management, election configuration, voting, and result processing.",
+    technologies: ["React.js", "Node.js", "Express.js", "PostgreSQL"],
     features: [
-      "Voter registration & role-based authentication",
-      "Election configuration and secure voting workflows",
-      "Encrypted vote storage and validation",
-      "Real-time vote counting & interactive result dashboards"
+      "Role-based access control and REST APIs for voter management, election configuration, voting, and result processing",
+      "Enforced one-vote-per-voter integrity using PostgreSQL transactions and constraints",
+      "Secure vote storage, real-time result updates, and interactive analytics dashboards"
     ],
     githubUrl: "https://github.com/maheshpujari0476/PERNbased-voting-application"
   }

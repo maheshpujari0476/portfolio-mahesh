@@ -16,7 +16,7 @@ export default function Projects() {
           subtitle="Independent development work showcasing full-stack capabilities."
         />
 
-        <div className="mt-8 sm:mt-10 grid grid-cols-1 lg:grid-cols-2 gap-5 sm:gap-6">
+        <div className={`mt-8 sm:mt-10 ${projects.length === 1 ? 'max-w-3xl mx-auto' : 'grid grid-cols-1 lg:grid-cols-2 gap-5 sm:gap-6'}`}>
           {projects.map((project, index) => (
             <motion.div
               key={project.id}

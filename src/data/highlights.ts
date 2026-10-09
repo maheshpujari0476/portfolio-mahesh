@@ -1,58 +1,44 @@
 export const engineeringHighlights = [
   {
-    id: "auth-rbac",
-    title: "Authentication & RBAC",
-    description: "Implemented centralized authentication, authorization and role-based access control for different organizational roles across production ERP workflows.",
-    technologies: ["Spring Boot", "JWT", "RBAC", "REST APIs"],
-    icon: "ShieldCheck"
-  },
-  {
     id: "notifications",
-    title: "Notification Infrastructure",
-    description: "Designed notification workflows supporting Email, WhatsApp, and SMS, including MSG91 integration, template management, and DLT mappings.",
-    technologies: ["Java", "Spring Boot", "3rd-Party APIs", "Webhooks"],
+    title: "Event-Driven Notifications",
+    description: "Designed and built a multi-channel notification system from scratch for Email, SMS, and WhatsApp using MSG91 APIs, optimized with Apache Kafka for asynchronous processing.",
+    technologies: ["Apache Kafka", "Spring Boot", "MSG91 APIs", "Microservices"],
     icon: "BellRing"
   },
   {
-    id: "biometric",
-    title: "Biometric Attendance",
-    description: "Implemented biometric attendance integration including device enrollment, queued synchronization, device communication, and automatic processing.",
-    technologies: ["Java", "Spring Boot", "Hardware Integration", "Microservices"],
-    icon: "Fingerprint"
+    id: "auth-rbac",
+    title: "Authentication & RBAC",
+    description: "Implemented secure backend services with Spring Security, JWT authentication, role-based access control (RBAC), and Redis-based rate limiting.",
+    technologies: ["Spring Security", "JWT", "RBAC", "Redis"],
+    icon: "ShieldCheck"
   },
   {
-    id: "data-migration",
-    title: "Data Migration",
-    description: "Developed bulk data migration services for Excel-based student and staff data with validation, structured processing, and error handling.",
-    technologies: ["Spring Boot", "Apache POI", "PostgreSQL", "Data Validation"],
-    icon: "DatabaseZap"
-  },
-  {
-    id: "transfers",
-    title: "Student & Staff Transfers",
-    description: "Implemented complex transfer workflows between institutes within the same organization while preserving required records and admission mappings.",
-    technologies: ["Spring Boot", "Spring Data JPA", "SQL", "Transactional Logic"],
-    icon: "Users"
+    id: "rest-apis",
+    title: "Microservices & REST APIs",
+    description: "Developed scalable microservices and REST APIs using Java, Spring Boot, and Spring Data JPA with pagination, filtering, and transactional workflows.",
+    technologies: ["Java", "Spring Boot", "Spring Data JPA", "REST APIs"],
+    icon: "Server"
   },
   {
     id: "gps",
     title: "GPS Vehicle Tracking",
-    description: "Integrated Traccar-based GPS vehicle tracking using vehicle IMEI registration and real-time location data for map-based interfaces.",
-    technologies: ["Node.js", "Traccar API", "REST APIs", "WebSocket"],
+    description: "Integrated Traccar for real-time GPS tracking using vehicle IMEI registration and real-time location data for responsive map interfaces.",
+    technologies: ["Traccar API", "REST APIs", "WebSocket", "Real-time Tracking"],
     icon: "Map"
   },
   {
-    id: "rest-apis",
-    title: "REST API Development",
-    description: "Designed and developed secure, scalable REST APIs using Spring Boot and Spring Data JPA for core ERP modules and business workflows.",
-    technologies: ["Java", "Spring Boot", "REST", "API Design"],
-    icon: "Server"
+    id: "database",
+    title: "Database Transactions & Optimization",
+    description: "Managed data integrity across PostgreSQL and MySQL using database transactions, constraints, index optimization, and query tuning.",
+    technologies: ["PostgreSQL", "MySQL", "Database Transactions", "Query Optimization"],
+    icon: "HardDrive"
   },
   {
-    id: "database",
-    title: "Database & Performance",
-    description: "Worked with PostgreSQL and MySQL databases for application data, production workflows, complex queries, migrations, and database operations.",
-    technologies: ["PostgreSQL", "MySQL", "SQL", "Query Optimization"],
-    icon: "HardDrive"
+    id: "devops",
+    title: "Containerization & Deployment",
+    description: "Containerized backend services with Docker, orchestrated with Kubernetes, and managed robust CI/CD and version control via Git & GitHub.",
+    technologies: ["Docker", "Kubernetes", "Git", "GitHub", "CI/CD"],
+    icon: "DatabaseZap"
   }
 ];

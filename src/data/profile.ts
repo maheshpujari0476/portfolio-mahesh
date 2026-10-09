@@ -1,13 +1,13 @@
 export const profile = {
-  name: "Mahesh Pujari",
-  role: "Associate Software Engineer",
-  headline: "Associate Software Engineer",
-  description: "Building secure, scalable and production-ready applications with Java, Spring Boot, React.js, Next.js and Node.js.",
-  about: `I’m an Associate Software Engineer with hands-on experience building and maintaining production ERP and full-stack applications. I work primarily with Java, Spring Boot, React.js, Next.js, Node.js, PostgreSQL, MySQL, MongoDB, and Redis.
+  name: "Mahesh",
+  role: "Full-Stack Developer",
+  headline: "Full-Stack Developer",
+  description: "Building secure, scalable, and event-driven systems with Java, Spring Boot, React.js, Next.js, and Microservices.",
+  about: `Backend-focused Full-Stack Developer with strong skills in Java, Spring Boot, and Microservices Architecture, building secure, scalable, event-driven systems.
 
-My experience includes developing secure REST APIs, authentication and authorization systems, RBAC, microservices, database-driven workflows, third-party integrations, data migration, biometric attendance integration, notification systems, and GPS-based vehicle tracking.
+Designed a multi-channel notification system (Email, SMS, WhatsApp) from scratch using MSG91 and optimized it with Apache Kafka, and integrated Traccar for real-time GPS tracking. Hands-on with Spring Security, JWT, RBAC, Redis caching, rate limiting, pagination, and database transactions across PostgreSQL and MySQL.
 
-I enjoy solving real-world engineering problems and building secure, scalable, reliable, and maintainable software.`,
+Strong foundation in Data Structures & Algorithms, OOP, and System Design.`,
   contact: {
     email: "maheshpujari4030@gmail.com",
     phone: "+91 7022624030",

@@ -6,7 +6,7 @@ import { SectionHeading } from "./ui/SectionHeading";
 
 export default function About() {
   const stats = [
-    { label: "Production ERP", value: "Real-world scale" },
+    { label: "Event-Driven Systems", value: "Kafka & Scale" },
     { label: "Core Backend", value: "Java / Spring Boot" },
     { label: "Architecture", value: "Microservices & APIs" },
     { label: "Security Focus", value: "RBAC & Authentication" }

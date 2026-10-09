@@ -15,8 +15,8 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Mahesh Pujari | Associate Software Engineer",
-  description: "Portfolio of Mahesh Pujari, Associate Software Engineer specializing in Java, Spring Boot, React.js, Next.js, Node.js, REST APIs, microservices and production applications.",
+  title: "Mahesh | Full-Stack Developer",
+  description: "Portfolio of Mahesh, Full-Stack Developer specializing in Java, Spring Boot, React.js, Next.js, REST APIs, microservices, and event-driven systems.",
 };
 
 export default function RootLayout({

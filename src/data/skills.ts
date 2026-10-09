@@ -5,26 +5,26 @@ export const skillCategories = [
   },
   {
     title: "Backend",
-    skills: ["Spring Boot", "Spring Data JPA", "Node.js", "Express.js", "REST APIs", "GraphQL", "Microservices"]
-  },
-  {
-    title: "Frontend",
-    skills: ["React.js", "Next.js", "Tailwind CSS", "Material UI"]
-  },
-  {
-    title: "Databases",
-    skills: ["PostgreSQL", "MySQL", "MongoDB", "Redis"]
+    skills: ["Spring Boot", "Spring Security", "Spring Data JPA", "Hibernate", "REST APIs", "Microservices Architecture", "Node.js"]
   },
   {
     title: "Security",
-    skills: ["JWT Authentication", "Authentication", "Authorization", "RBAC", "HTTP Cookies", "API Security"]
+    skills: ["JWT", "Authentication", "Authorization", "RBAC", "API Security", "Rate Limiting"]
   },
   {
-    title: "Core Concepts",
-    skills: ["Object-Oriented Programming", "Data Structures & Algorithms", "System Design", "API Design", "Database Design", "Performance Optimization", "Microservices"]
+    title: "Databases",
+    skills: ["PostgreSQL", "MySQL", "MongoDB", "Redis (Caching, Rate Limiting)", "Database Transactions"]
   },
   {
-    title: "Tools & DevOps",
-    skills: ["Git", "GitHub", "Docker", "Kubernetes", "Postman", "CI/CD"]
+    title: "Frontend",
+    skills: ["React.js", "Next.js"]
+  },
+  {
+    title: "Core",
+    skills: ["Data Structures & Algorithms", "OOP", "System Design", "API Design", "Database Design"]
+  },
+  {
+    title: "DevOps & Tools",
+    skills: ["Docker", "Kubernetes", "Git", "GitHub", "CI/CD", "Postman"]
   }
 ];
