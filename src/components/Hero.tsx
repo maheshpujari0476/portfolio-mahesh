@@ -11,7 +11,7 @@ import { GithubIcon as Github, LinkedinIcon as Linkedin } from "@/components/ui/
 
 export default function Hero() {
   const [mousePos, setMousePos] = useState({ x: -1000, y: -1000 });
-  const coreTech = ["Java", "Spring Boot", "React.js", "Next.js", "Node.js", "PostgreSQL", "Microservices"];
+  const coreTech = ["Node.js", "Express.js", "React.js", "TypeScript", "PostgreSQL", "MongoDB", "Socket.io", "Redis"];
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {

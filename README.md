@@ -1,6 +1,6 @@
 # Mahesh Pujari - Professional Portfolio
 
-This is the source code for my professional engineering portfolio, designed to highlight my experience in Java, Spring Boot, Full Stack Development, and production ERP systems.
+This is the source code for my professional engineering portfolio, designed to highlight my experience in MERN Stack, Node.js Backend Development, Real-Time Web Applications, and production systems.
 
 ## Features
 

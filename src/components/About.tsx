@@ -6,10 +6,10 @@ import { SectionHeading } from "./ui/SectionHeading";
 
 export default function About() {
   const stats = [
-    { label: "Event-Driven Systems", value: "Kafka & Scale" },
-    { label: "Core Backend", value: "Java / Spring Boot" },
-    { label: "Architecture", value: "Microservices & APIs" },
-    { label: "Security Focus", value: "RBAC & Authentication" }
+    { label: "Core Backend", value: "Node.js & Express.js" },
+    { label: "Real-Time & Sockets", value: "Socket.io & Events" },
+    { label: "Database Design", value: "MySQL, PostgreSQL, MongoDB" },
+    { label: "Security & Auth", value: "Argon2id, JWT & RBAC" }
   ];
 
   return (

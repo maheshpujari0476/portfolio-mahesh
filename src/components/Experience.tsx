@@ -47,13 +47,28 @@ function ExperienceCard({ exp, index }: { exp: (typeof experiences)[0]; index: n
           <div>
             <h3 className="text-2xl font-bold text-[#FFFFFF]">{exp.role}</h3>
             <p className="text-lg font-medium text-[#E3B140] mt-1">{exp.company}</p>
+            {"client" in exp && exp.client && (
+              <p className="text-sm text-[#A1A1AA] mt-1">
+                <span className="text-[#E3B140] font-medium">Client:</span> {exp.client}
+              </p>
+            )}
           </div>
-          <div className="mt-2 md:mt-0 text-[#D1D5DB] font-mono text-sm bg-[#000000] px-3 py-1 rounded-full border border-[#262626] inline-block">
+          <div className="mt-2 md:mt-0 text-[#D1D5DB] font-mono text-sm bg-[#000000] px-3 py-1 rounded-full border border-[#262626] inline-block self-start">
             {exp.period}
           </div>
         </div>
 
-        <p className="text-[#D1D5DB] mb-6 text-lg">{exp.description}</p>
+        <p className="text-[#D1D5DB] mb-4 text-lg">{exp.description}</p>
+
+        {"technologies" in exp && Array.isArray(exp.technologies) && (
+          <div className="flex flex-wrap gap-1.5 mb-6">
+            {exp.technologies.map((tech: string, i: number) => (
+              <Badge key={i} variant="primary" className="text-xs">
+                {tech}
+              </Badge>
+            ))}
+          </div>
+        )}
 
         {/* Bullet Points */}
         <div className="space-y-4">

@@ -1,13 +1,11 @@
 export const profile = {
   name: "Mahesh",
-  role: "Full-Stack Developer",
-  headline: "Full-Stack Developer",
-  description: "Building secure, scalable, and event-driven systems with Java, Spring Boot, React.js, Next.js, and Microservices.",
-  about: `Backend-focused Full-Stack Developer with strong skills in Java, Spring Boot, and Microservices Architecture, building secure, scalable, event-driven systems.
+  role: "MERN Stack Developer",
+  headline: "MERN Stack & Node.js Backend Developer",
+  description: "Building secure, scalable, real-time web applications with Node.js, Express.js, React.js, and relational & NoSQL databases.",
+  about: `MERN Stack Developer with strong Node.js backend skills and hands-on experience building secure, scalable, real-time web applications.
 
-Designed a multi-channel notification system (Email, SMS, WhatsApp) from scratch using MSG91 and optimized it with Apache Kafka, and integrated Traccar for real-time GPS tracking. Hands-on with Spring Security, JWT, RBAC, Redis caching, rate limiting, pagination, and database transactions across PostgreSQL and MySQL.
-
-Strong foundation in Data Structures & Algorithms, OOP, and System Design.`,
+Experienced in Express.js REST APIs, JWT authentication, RBAC, Redis-backed rate limiting, Socket.io, and relational and NoSQL database design (MySQL, PostgreSQL, MongoDB). Modernized a legacy production codebase to ES6+ and delivered a zero-downtime password migration from SHA-1 to Argon2id for an international client.`,
   contact: {
     email: "maheshpujari4030@gmail.com",
     phone: "+91 7022624030",

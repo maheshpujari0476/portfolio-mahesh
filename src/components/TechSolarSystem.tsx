@@ -6,8 +6,8 @@ import {
   JavaScriptIcon,
   MongoDBIcon,
   NextJsIcon,
-  JavaIcon,
-  SpringBootIcon,
+  TypeScriptIcon,
+  RedisIcon,
   GitIcon,
   DockerIcon,
   NodeJsIcon,
@@ -86,7 +86,7 @@ export default function TechSolarSystem() {
       </div>
 
       {/* ============================================================ */}
-      {/* ORBIT 3: MID-OUTER (Diameter: 400px) -> Next.js, Java, Spring Boot */}
+      {/* ORBIT 3: MID-OUTER (Diameter: 400px) -> Next.js, TypeScript, Redis */}
       {/* ============================================================ */}
       <div className="absolute w-[400px] h-[400px] rounded-full border border-white/10 pointer-events-none" />
       <div className="absolute w-[400px] h-[400px] rounded-full animate-orbit-3">
@@ -96,16 +96,16 @@ export default function TechSolarSystem() {
             <PlanetCard icon={<NextJsIcon className="w-4 h-4 sm:w-[18px] sm:h-[18px]" />} label="Next.js" />
           </div>
         </div>
-        {/* Java (Bottom-Right: 120°) -> top: 75%, left: 93.3% */}
+        {/* TypeScript (Bottom-Right: 120°) -> top: 75%, left: 93.3% */}
         <div className="absolute top-[75%] left-[93.3%] -translate-x-1/2 -translate-y-1/2">
           <div className="animate-counter-3">
-            <PlanetCard icon={<JavaIcon className="w-4 h-4 sm:w-[18px] sm:h-[18px]" />} label="Java" />
+            <PlanetCard icon={<TypeScriptIcon className="w-4 h-4 sm:w-[18px] sm:h-[18px]" />} label="TypeScript" />
           </div>
         </div>
-        {/* Spring Boot (Bottom-Left: 240°) -> top: 75%, left: 6.7% */}
+        {/* Redis (Bottom-Left: 240°) -> top: 75%, left: 6.7% */}
         <div className="absolute top-[75%] left-[6.7%] -translate-x-1/2 -translate-y-1/2">
           <div className="animate-counter-3">
-            <PlanetCard icon={<SpringBootIcon className="w-4 h-4 sm:w-[18px] sm:h-[18px]" />} label="Spring Boot" />
+            <PlanetCard icon={<RedisIcon className="w-4 h-4 sm:w-[18px] sm:h-[18px]" />} label="Redis" />
           </div>
         </div>
       </div>

@@ -1,30 +1,26 @@
 export const skillCategories = [
   {
     title: "Languages",
-    skills: ["Java", "JavaScript", "TypeScript", "SQL"]
-  },
-  {
-    title: "Backend",
-    skills: ["Spring Boot", "Spring Security", "Spring Data JPA", "Hibernate", "REST APIs", "Microservices Architecture", "Node.js"]
-  },
-  {
-    title: "Security",
-    skills: ["JWT", "Authentication", "Authorization", "RBAC", "API Security", "Rate Limiting"]
-  },
-  {
-    title: "Databases",
-    skills: ["PostgreSQL", "MySQL", "MongoDB", "Redis (Caching, Rate Limiting)", "Database Transactions"]
+    skills: ["JavaScript (ES6+)", "TypeScript", "SQL", "HTML5", "CSS3"]
   },
   {
     title: "Frontend",
-    skills: ["React.js", "Next.js"]
+    skills: ["React.js", "Next.js", "Redux Toolkit", "Tailwind CSS", "Chakra UI", "Vite"]
   },
   {
-    title: "Core",
-    skills: ["Data Structures & Algorithms", "OOP", "System Design", "API Design", "Database Design"]
+    title: "Backend & Real-Time",
+    skills: ["Node.js", "Express.js", "RESTful APIs", "Socket.io", "WebSockets", "Sequelize ORM", "Multer"]
   },
   {
-    title: "DevOps & Tools",
-    skills: ["Docker", "Kubernetes", "Git", "GitHub", "CI/CD", "Postman"]
+    title: "Security",
+    skills: ["JWT", "Argon2id", "RBAC", "Rate Limiting", "API Security"]
+  },
+  {
+    title: "Databases & Caching",
+    skills: ["MongoDB", "MySQL", "PostgreSQL", "Redis (Caching, Rate Limiting)"]
+  },
+  {
+    title: "Tools",
+    skills: ["Git", "GitHub", "Docker", "Postman"]
   }
 ];

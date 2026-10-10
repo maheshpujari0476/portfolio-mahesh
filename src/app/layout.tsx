@@ -15,8 +15,8 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Mahesh | Full-Stack Developer",
-  description: "Portfolio of Mahesh, Full-Stack Developer specializing in Java, Spring Boot, React.js, Next.js, REST APIs, microservices, and event-driven systems.",
+  title: "Mahesh | MERN Stack & Node.js Developer",
+  description: "Portfolio of Mahesh, MERN Stack Developer specializing in Node.js backend skills, Express.js REST APIs, React.js, Socket.io, real-time web applications, and database design.",
 };
 
 export default function RootLayout({

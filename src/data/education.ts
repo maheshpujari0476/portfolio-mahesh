@@ -3,7 +3,7 @@ export const education = [
     id: "ms-engineering",
     institution: "MS Engineering College, Bengaluru",
     degree: "Bachelor of Engineering in Computer Science",
-    period: "Dec 2022 – May 2026",
+    period: "Dec 2022 – Jul 2026",
     score: "CGPA: 8.12"
   },
   {

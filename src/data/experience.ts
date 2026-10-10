@@ -1,16 +1,18 @@
 export const experiences = [
   {
     id: "skyllx",
-    role: "Full-Stack Developer",
+    role: "Backend Developer (Node.js)",
     company: "SkyllX Technologies Pvt. Ltd.",
+    client: "Topmai, Mexico",
+    technologies: ["Node.js", "Express.js", "MySQL", "Redis", "Socket.io", "Sequelize", "JWT", "Argon2"],
     period: "Jun 2026 – Present",
-    description: "Building secure, scalable, and event-driven microservices, multi-channel notification systems, and full-stack solutions with Java, Spring Boot, React.js, and Next.js.",
+    description: "Modernizing legacy production services, implementing high-security credential migrations, and engineering real-time messaging architecture for an international client.",
     isPrimary: true,
     highlights: [
-      "Designed and built a multi-channel notification system from scratch for Email, SMS, and WhatsApp using MSG91 APIs, then optimized throughput and reliability with Apache Kafka for asynchronous, event-driven processing.",
-      "Developed scalable microservices and REST APIs using Java, Spring Boot, and Spring Data JPA with pagination, filtering, and transactional workflows on MySQL and PostgreSQL.",
-      "Implemented secure backend services with Spring Security, JWT authentication, RBAC, and Redis-based rate limiting, and integrated Traccar for real-time GPS tracking.",
-      "Solved real-world business problems by shipping new backend features, resolving production bugs, and optimizing SQL queries to improve API reliability; deployed with Docker and Kubernetes and managed code with Git and GitHub."
+      "Modernized a large legacy Node.js/Express codebase by refactoring procedural, callback-based code into modular ES6+ async/await with standardized error handling and REST status codes.",
+      "Designed a zero-downtime credential migration that re-hashed legacy SHA-1 passwords to Argon2id at login, with no service disruption and no forced password resets.",
+      "Implemented RBAC and strengthened JWT security with issuer/audience verification and Redis-backed rate limiting, while keeping older mobile app versions compatible.",
+      "Built threaded message replies for direct and group chat using Sequelize with optimized SQL joins, encrypted payload handling, and real-time Socket.io events; worked directly with an international team to fix production issues and deliver client requirements."
     ]
   }
 ];
